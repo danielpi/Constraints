@@ -45,16 +45,32 @@ public struct Segment {
 }
 
 public func pathToSegments(path: [Values]) -> [Segment] {
+    var segments: [Segment] = []
+    
+    for (index, _) in Array(path[1..<path.count]).enumerate() {
+        let start = path[index]
+        let finish = path[index + 1]
+        
+        let segment = Segment(startPoint: Point(x: start["x"]!, y: start["y"]!),
+            endPoint: Point(x: finish["x"]!, y: finish["y"]!))
+        
+        segments = segments + [segment]
+    }
+    
+    return segments
+    /*
     func iter(start: [Expr: Double], path: [Values], segments: [Segment]) -> [Segment] {
         if let finish = path.first {
             let segment = Segment(startPoint: Point(x: start["x"]!, y: start["y"]!),
                 endPoint: Point(x: finish["x"]!, y: finish["y"]!))
-            return iter(finish, path: Array(path[1..<path.count]), segments: segments + [segment])
+            let remainingPath = Array(path[1..<path.count])
+            return iter(finish, path: remainingPath, segments: segments + [segment])
         } else {
             return segments
         }
     }
     return iter(path.first!, path: path, segments: [])
+    */
 }
 
 public func gridStep(exp: Expr, from: Point, to: Point, every: Double) -> [Segment] {

@@ -14,6 +14,8 @@
 		E69D5AA41C4F0BCA00462E7A /* Partial_Differential_ExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D5AA31C4F0BCA00462E7A /* Partial_Differential_ExplorerTests.swift */; };
 		E69D5AB01C4F14AA00462E7A /* Symbolic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D5AAE1C4F14AA00462E7A /* Symbolic.swift */; };
 		E69D5AB11C4F14AA00462E7A /* Visuals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D5AAF1C4F14AA00462E7A /* Visuals.swift */; };
+		E69D5AB41C4F5A7C00462E7A /* GradientDescentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D5AB31C4F5A7C00462E7A /* GradientDescentView.swift */; };
+		E69D5AB91C50A9E600462E7A /* RateLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69D5AB81C50A9E600462E7A /* RateLimit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		E69D5AA51C4F0BCA00462E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E69D5AAE1C4F14AA00462E7A /* Symbolic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbolic.swift; sourceTree = "<group>"; };
 		E69D5AAF1C4F14AA00462E7A /* Visuals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visuals.swift; sourceTree = "<group>"; };
+		E69D5AB31C4F5A7C00462E7A /* GradientDescentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDescentView.swift; sourceTree = "<group>"; };
+		E69D5AB81C50A9E600462E7A /* RateLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateLimit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			children = (
 				E69D5A911C4F0BCA00462E7A /* AppDelegate.swift */,
 				E69D5A931C4F0BCA00462E7A /* ViewController.swift */,
+				E69D5AB31C4F5A7C00462E7A /* GradientDescentView.swift */,
+				E69D5AB81C50A9E600462E7A /* RateLimit.swift */,
 				E69D5A951C4F0BCA00462E7A /* Assets.xcassets */,
 				E69D5A971C4F0BCA00462E7A /* Main.storyboard */,
 				E69D5A9A1C4F0BCA00462E7A /* Info.plist */,
@@ -211,7 +217,9 @@
 				E69D5AB01C4F14AA00462E7A /* Symbolic.swift in Sources */,
 				E69D5A941C4F0BCA00462E7A /* ViewController.swift in Sources */,
 				E69D5A921C4F0BCA00462E7A /* AppDelegate.swift in Sources */,
+				E69D5AB91C50A9E600462E7A /* RateLimit.swift in Sources */,
 				E69D5AB11C4F14AA00462E7A /* Visuals.swift in Sources */,
+				E69D5AB41C4F5A7C00462E7A /* GradientDescentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
