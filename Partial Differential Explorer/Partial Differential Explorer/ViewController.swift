@@ -14,6 +14,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var runButton: NSButton!
     @IBOutlet weak var pointCountField: NSTextField!
     @IBOutlet weak var pathView: GradientDescentView!
+    @IBOutlet weak var scrollView: NSScrollView!
     
     let equation1: Expr = ((2 * "x") + (3 * "y")) * ("x" + (-1 * "y")) ==== 2
     let equation2: Expr = ((3 * "x") + "y") ==== 5

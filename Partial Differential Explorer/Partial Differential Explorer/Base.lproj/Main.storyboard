@@ -673,9 +673,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="EZr-4H-zaZ" customClass="GradientDescentView" customModule="Partial_Differential_Explorer" customModuleProvider="target">
-                                <rect key="frame" x="20" y="50" width="440" height="200"/>
-                            </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-JW-UbN">
                                 <rect key="frame" x="122" y="20" width="237" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Click and Drag in the white area above" id="mRa-ab-j1j">
@@ -684,18 +681,45 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" allowsMagnification="YES" maxMagnification="10" minMagnification="0.10000000000000001" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUp-BH-YhH">
+                                <rect key="frame" x="19" y="49" width="442" height="202"/>
+                                <clipView key="contentView" id="bdZ-oQ-0Ph">
+                                    <rect key="frame" x="1" y="1" width="181" height="94"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZr-4H-zaZ" customClass="GradientDescentView" customModule="Partial_Differential_Explorer" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="4000" height="4000"/>
+                                        </customView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="EZr-4H-zaZ" secondAttribute="trailing" id="IKU-31-1j7"/>
+                                        <constraint firstItem="EZr-4H-zaZ" firstAttribute="top" secondItem="bdZ-oQ-0Ph" secondAttribute="top" id="XjS-EL-NBU"/>
+                                        <constraint firstAttribute="bottom" secondItem="EZr-4H-zaZ" secondAttribute="bottom" id="kP5-59-j3o"/>
+                                        <constraint firstItem="EZr-4H-zaZ" firstAttribute="leading" secondItem="bdZ-oQ-0Ph" secondAttribute="leading" id="usC-fX-mxw"/>
+                                    </constraints>
+                                </clipView>
+                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="xtk-9N-nbe">
+                                    <rect key="frame" x="1" y="79" width="181" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="zz9-Vd-7kn">
+                                    <rect key="frame" x="166" y="1" width="16" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="EZr-4H-zaZ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="CsK-7y-i5k"/>
-                            <constraint firstItem="EZr-4H-zaZ" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="UbS-53-sBa"/>
-                            <constraint firstItem="tkv-JW-UbN" firstAttribute="centerX" secondItem="EZr-4H-zaZ" secondAttribute="centerX" id="XJd-uP-0ob"/>
-                            <constraint firstAttribute="trailing" secondItem="EZr-4H-zaZ" secondAttribute="trailing" constant="20" symbolic="YES" id="geO-xe-i75"/>
-                            <constraint firstItem="tkv-JW-UbN" firstAttribute="top" secondItem="EZr-4H-zaZ" secondAttribute="bottom" constant="13" id="mO1-O6-U6b"/>
-                            <constraint firstAttribute="bottom" secondItem="tkv-JW-UbN" secondAttribute="bottom" constant="20" symbolic="YES" id="pDx-1i-2xg"/>
+                            <constraint firstItem="SUp-BH-YhH" firstAttribute="centerX" secondItem="tkv-JW-UbN" secondAttribute="centerX" id="1bw-yS-9JX"/>
+                            <constraint firstItem="SUp-BH-YhH" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="19" id="GJn-ht-tHy"/>
+                            <constraint firstAttribute="bottom" secondItem="tkv-JW-UbN" secondAttribute="bottom" constant="20" symbolic="YES" id="Ynm-Yl-pac"/>
+                            <constraint firstItem="SUp-BH-YhH" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="19" id="acj-je-y3E"/>
+                            <constraint firstItem="SUp-BH-YhH" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="dkC-UW-6V8"/>
+                            <constraint firstItem="tkv-JW-UbN" firstAttribute="top" secondItem="SUp-BH-YhH" secondAttribute="bottom" constant="12" id="seZ-tC-DKz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pathView" destination="EZr-4H-zaZ" id="Vty-4p-3rj"/>
+                        <outlet property="scrollView" destination="SUp-BH-YhH" id="TM1-zp-Amf"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -33,7 +33,7 @@ class GradientDescentView: NSView {
     func drawPath(path: [Values]) {
     
         let myContext: CGContextRef? = NSGraphicsContext.currentContext()?.CGContext
-        self.transform.concat()
+        //self.transform.concat()
         
         CGContextBeginPath(myContext)
         
@@ -51,8 +51,54 @@ class GradientDescentView: NSView {
             CGContextAddLineToPoint(myContext, CGFloat(value["x"]!), CGFloat(value["y"]!))
         }
         
+        CGContextStrokePath(myContext)
+    }
+    
+    
+    func drawMajorGrid() {
+        let myContext: CGContextRef? = NSGraphicsContext.currentContext()?.CGContext
+        
+        self.transform.concat()
+        
+        CGContextBeginPath(myContext)
+        
+        CGContextSetStrokeColorWithColor(myContext, NSColor(hue: 0, saturation: 0, brightness: 0.96, alpha: 1.0).CGColor)
+        
+        CGContextSetLineWidth(myContext, 0.01)
+        
+        CGContextMoveToPoint(myContext, CGFloat(minX), CGFloat(minY))
+        CGContextAddLineToPoint(myContext, CGFloat(minX), CGFloat(maxY))
+        
+        CGContextMoveToPoint(myContext, 1.0, CGFloat(minY))
+        CGContextAddLineToPoint(myContext, 1.0, CGFloat(maxY))
+        
+        CGContextMoveToPoint(myContext, 2.0, CGFloat(minY))
+        CGContextAddLineToPoint(myContext, 2.0, CGFloat(maxY))
+        
+        CGContextMoveToPoint(myContext, 3.0, CGFloat(minY))
+        CGContextAddLineToPoint(myContext, 3.0, CGFloat(maxY))
+        
+        CGContextMoveToPoint(myContext, 4.0, CGFloat(minY))
+        CGContextAddLineToPoint(myContext, 4.0, CGFloat(maxY))
+        
+        
+        CGContextMoveToPoint(myContext, CGFloat(minX), -2.0)
+        CGContextAddLineToPoint(myContext, CGFloat(maxX), -2.0)
+        
+        CGContextMoveToPoint(myContext, CGFloat(minX), -1.0)
+        CGContextAddLineToPoint(myContext, CGFloat(maxX), -1.0)
+        
+        CGContextMoveToPoint(myContext, CGFloat(minX), 0.0)
+        CGContextAddLineToPoint(myContext, CGFloat(maxX), 0.0)
+        
+        CGContextMoveToPoint(myContext, CGFloat(minX), 1.0)
+        CGContextAddLineToPoint(myContext, CGFloat(maxX), 1.0)
+        
+        CGContextMoveToPoint(myContext, CGFloat(minX), 2.0)
+        CGContextAddLineToPoint(myContext, CGFloat(maxX), 2.0)
         
         CGContextStrokePath(myContext)
+        
     }
     
     func paintBackground(dirtyRect: NSRect) {
@@ -70,10 +116,13 @@ class GradientDescentView: NSView {
         // Drawing code here.
         
         paintBackground(dirtyRect)
+        drawMajorGrid()
         
         if let vc = viewController {
             drawPath(vc.currentSolution)
         }
+        
+        
     }
     
     override func mouseDragged(theEvent: NSEvent) {
