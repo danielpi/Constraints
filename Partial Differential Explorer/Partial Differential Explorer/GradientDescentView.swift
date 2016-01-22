@@ -109,8 +109,6 @@ class GradientDescentView: NSView {
     }
     
     override func drawRect(dirtyRect: NSRect) {
-        
-        
         super.drawRect(dirtyRect)
 
         // Drawing code here.
@@ -133,7 +131,7 @@ class GradientDescentView: NSView {
                 let t = transform
                 t.invert()
                 let pointInPlane = t.transformPoint(pointInView)
-                Swift.print("\(pointInPlane)")
+
                 vc.solveSystem(pointInPlane)
             }
         }
@@ -149,22 +147,10 @@ class GradientDescentView: NSView {
             let t = transform
             t.invert()
             let pointInPlane = t.transformPoint(pointInView)
-            Swift.print("\(pointInPlane)")
+
             vc.solveSystem(pointInPlane)
         }
-        
-        Swift.print("mouseDown:\(theEvent)")
     }
     
-    override func mouseMoved(theEvent: NSEvent) {
-        Swift.print("mouseMove:\(theEvent)")
-    }
-    
-    /*
-    - (void)mouseDown:(NSEvent *)theEvent {
-    [self setFrameColor:[NSColor redColor]];
-    [self setNeedsDisplay:YES];
-    }
-*/
     
 }
