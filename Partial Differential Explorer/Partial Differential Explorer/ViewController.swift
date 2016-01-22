@@ -18,8 +18,10 @@ class ViewController: NSViewController {
     
     let equation1: Expr = ((2 * "x") + (3 * "y")) * ("x" + (-1 * "y")) ==== 2
     let equation2: Expr = ((3 * "x") + "y") ==== 5
+    let equation3: Expr = ("x" * "x") + ("y" * "y") ==== 2
     var system: Expr {
         return costFunction([equation1, equation2])
+        //return costFunction([equation3])
     }
     
     var currentSolution: [Values] = []

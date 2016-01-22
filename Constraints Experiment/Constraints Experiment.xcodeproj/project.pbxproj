@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6427E4C1C51F98600E7DC30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6427E4B1C51F98600E7DC30 /* AppDelegate.swift */; };
+		E6427E4E1C51F98600E7DC30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6427E4D1C51F98600E7DC30 /* ViewController.swift */; };
+		E6427E501C51F98600E7DC30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6427E4F1C51F98600E7DC30 /* Assets.xcassets */; };
+		E6427E531C51F98600E7DC30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6427E511C51F98600E7DC30 /* Main.storyboard */; };
+		E6427E5E1C51F98600E7DC30 /* Constraints_ExperimentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6427E5D1C51F98600E7DC30 /* Constraints_ExperimentTests.swift */; };
+		E6427E6A1C51F9E500E7DC30 /* Symbolic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6427E681C51F9E500E7DC30 /* Symbolic.swift */; };
+		E6427E6B1C51F9E500E7DC30 /* Visuals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6427E691C51F9E500E7DC30 /* Visuals.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6427E5A1C51F98600E7DC30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6427E401C51F98600E7DC30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6427E471C51F98600E7DC30;
+			remoteInfo = "Constraints Experiment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E6427E481C51F98600E7DC30 /* Constraints Experiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Constraints Experiment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6427E4B1C51F98600E7DC30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6427E4D1C51F98600E7DC30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E6427E4F1C51F98600E7DC30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6427E521C51F98600E7DC30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6427E541C51F98600E7DC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6427E591C51F98600E7DC30 /* Constraints ExperimentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Constraints ExperimentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6427E5D1C51F98600E7DC30 /* Constraints_ExperimentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints_ExperimentTests.swift; sourceTree = "<group>"; };
+		E6427E5F1C51F98600E7DC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6427E681C51F9E500E7DC30 /* Symbolic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbolic.swift; sourceTree = "<group>"; };
+		E6427E691C51F9E500E7DC30 /* Visuals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visuals.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6427E451C51F98600E7DC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6427E561C51F98600E7DC30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6427E3F1C51F98600E7DC30 = {
+			isa = PBXGroup;
+			children = (
+				E6427E4A1C51F98600E7DC30 /* Constraints Experiment */,
+				E6427E5C1C51F98600E7DC30 /* Constraints ExperimentTests */,
+				E6427E491C51F98600E7DC30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6427E491C51F98600E7DC30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6427E481C51F98600E7DC30 /* Constraints Experiment.app */,
+				E6427E591C51F98600E7DC30 /* Constraints ExperimentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6427E4A1C51F98600E7DC30 /* Constraints Experiment */ = {
+			isa = PBXGroup;
+			children = (
+				E6427E4B1C51F98600E7DC30 /* AppDelegate.swift */,
+				E6427E4D1C51F98600E7DC30 /* ViewController.swift */,
+				E6427E681C51F9E500E7DC30 /* Symbolic.swift */,
+				E6427E691C51F9E500E7DC30 /* Visuals.swift */,
+				E6427E4F1C51F98600E7DC30 /* Assets.xcassets */,
+				E6427E511C51F98600E7DC30 /* Main.storyboard */,
+				E6427E541C51F98600E7DC30 /* Info.plist */,
+			);
+			path = "Constraints Experiment";
+			sourceTree = "<group>";
+		};
+		E6427E5C1C51F98600E7DC30 /* Constraints ExperimentTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6427E5D1C51F98600E7DC30 /* Constraints_ExperimentTests.swift */,
+				E6427E5F1C51F98600E7DC30 /* Info.plist */,
+			);
+			path = "Constraints ExperimentTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6427E471C51F98600E7DC30 /* Constraints Experiment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6427E621C51F98600E7DC30 /* Build configuration list for PBXNativeTarget "Constraints Experiment" */;
+			buildPhases = (
+				E6427E441C51F98600E7DC30 /* Sources */,
+				E6427E451C51F98600E7DC30 /* Frameworks */,
+				E6427E461C51F98600E7DC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Constraints Experiment";
+			productName = "Constraints Experiment";
+			productReference = E6427E481C51F98600E7DC30 /* Constraints Experiment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6427E581C51F98600E7DC30 /* Constraints ExperimentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6427E651C51F98600E7DC30 /* Build configuration list for PBXNativeTarget "Constraints ExperimentTests" */;
+			buildPhases = (
+				E6427E551C51F98600E7DC30 /* Sources */,
+				E6427E561C51F98600E7DC30 /* Frameworks */,
+				E6427E571C51F98600E7DC30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6427E5B1C51F98600E7DC30 /* PBXTargetDependency */,
+			);
+			name = "Constraints ExperimentTests";
+			productName = "Constraints ExperimentTests";
+			productReference = E6427E591C51F98600E7DC30 /* Constraints ExperimentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6427E401C51F98600E7DC30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Daniel Pink";
+				TargetAttributes = {
+					E6427E471C51F98600E7DC30 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					E6427E581C51F98600E7DC30 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E6427E471C51F98600E7DC30;
+					};
+				};
+			};
+			buildConfigurationList = E6427E431C51F98600E7DC30 /* Build configuration list for PBXProject "Constraints Experiment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6427E3F1C51F98600E7DC30;
+			productRefGroup = E6427E491C51F98600E7DC30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6427E471C51F98600E7DC30 /* Constraints Experiment */,
+				E6427E581C51F98600E7DC30 /* Constraints ExperimentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6427E461C51F98600E7DC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6427E501C51F98600E7DC30 /* Assets.xcassets in Resources */,
+				E6427E531C51F98600E7DC30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6427E571C51F98600E7DC30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6427E441C51F98600E7DC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6427E6A1C51F9E500E7DC30 /* Symbolic.swift in Sources */,
+				E6427E4E1C51F98600E7DC30 /* ViewController.swift in Sources */,
+				E6427E4C1C51F98600E7DC30 /* AppDelegate.swift in Sources */,
+				E6427E6B1C51F9E500E7DC30 /* Visuals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6427E551C51F98600E7DC30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6427E5E1C51F98600E7DC30 /* Constraints_ExperimentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6427E5B1C51F98600E7DC30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6427E471C51F98600E7DC30 /* Constraints Experiment */;
+			targetProxy = E6427E5A1C51F98600E7DC30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6427E511C51F98600E7DC30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6427E521C51F98600E7DC30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6427E601C51F98600E7DC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6427E611C51F98600E7DC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E6427E631C51F98600E7DC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Constraints Experiment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.electronicinnovations.Constraints-Experiment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E6427E641C51F98600E7DC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Constraints Experiment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.electronicinnovations.Constraints-Experiment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E6427E661C51F98600E7DC30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Constraints ExperimentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.electronicinnovations.Constraints-ExperimentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Constraints Experiment.app/Contents/MacOS/Constraints Experiment";
+			};
+			name = Debug;
+		};
+		E6427E671C51F98600E7DC30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Constraints ExperimentTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.electronicinnovations.Constraints-ExperimentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Constraints Experiment.app/Contents/MacOS/Constraints Experiment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6427E431C51F98600E7DC30 /* Build configuration list for PBXProject "Constraints Experiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6427E601C51F98600E7DC30 /* Debug */,
+				E6427E611C51F98600E7DC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6427E621C51F98600E7DC30 /* Build configuration list for PBXNativeTarget "Constraints Experiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6427E631C51F98600E7DC30 /* Debug */,
+				E6427E641C51F98600E7DC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E6427E651C51F98600E7DC30 /* Build configuration list for PBXNativeTarget "Constraints ExperimentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6427E661C51F98600E7DC30 /* Debug */,
+				E6427E671C51F98600E7DC30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6427E401C51F98600E7DC30 /* Project object */;
+}
