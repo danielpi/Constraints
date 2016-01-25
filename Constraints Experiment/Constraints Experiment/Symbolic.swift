@@ -302,6 +302,19 @@ public let backTrackingLineSearch = generateBackTrackingLineSearchAlgorithm(cont
     initialStepSize: 2.0)
 
 
+// I think the step function should return an enum that can specify the different fault/success condtions.
+
+enum StepResult {
+    case Solved(Values)
+    case LocalMinima(Values)
+    case ToInfinity
+}
+
+enum SolverError: ErrorType {
+    case LocalMinima(Values)
+    case Unstable
+}
+
 public func step(function: Expr, derivatives: Derivatives, start: Values) -> Values? {
     // The cost function is below some threshold
     guard abs(eval(function, start)) > epsilon else {
@@ -326,6 +339,10 @@ public func step(function: Expr, derivatives: Derivatives, start: Values) -> Val
     
     return newPoint
 }
+
+
+// If the solver is going to take a long time then it should be broken up so that feedback can be given to the user.
+// Also the function doesn't provide any indication of success or failer.
 
 public func solve(exp: Expr, initial: Values) -> [Values] {
     let pd = partialDerivatives(exp)
